@@ -1,0 +1,14 @@
+{
+  "name": "AudioMass - Replica",
+  "short_name": "AudioMass - Replica",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/img/icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
