@@ -24,3 +24,68 @@ body {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.ae_app {
+  width: 100%;
+  height: 100%;
+}
+
+/** TOOL BAR **/
+.ae_mobile .ae_timecontainer {
+  cursor: pointer;
+}
+
+.ae_mobile .ae_ftr .ae_btn span,
+.ae_mobile .ae_tb .ae_btn span {
+  visibility: hidden;
+  display: none;
+}
+/** ENDOF TOOLBAR **/
+
+/** AUDIOVIEW **/
+/** ENDOF AUDIOVIEW **/
+
+.ae_mobile .ae_zoom_in_v,
+.ae_mobile .ae_zoom_out_v {
+  display: none;
+}
+
+/* if max height < ... hide vertical buttons and position to 0... */
+
+.ae_inact,
+.ae_app .ae_inact,
+.ae_btn.ae_inact {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ae_mobile .icon-rec.ae_act {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 779px) {
+  .ae_mobile .ae_ctns,
+  .ae_mobile .ae_transport {
+    height: 36px;
+  }
+  .ae_mobile .ae_hdr {
+    padding: 20px 5px 0 5px;
+  }
+
+  .ae_mobile .ae_transport,
+  .ae_mobile .ae_ctns,
+  .ae_mobile .ae_btngroup {
+    float: none;
+    display: inline-block;
+  }
+  .ae_mobile .ae_btngroup {
+    padding-top: 8px;
+  }
+  .ae_mobile .ae_tb .ae_btn {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    margin: 0px 4px;
+    line-height: 24px;
+  }
+}
