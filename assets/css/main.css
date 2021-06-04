@@ -30,7 +30,7 @@ body {
   height: 100%;
 }
 
-/** TOOL BAR **/
+/** TOOLBAR **/
 .ae_mobile .ae_timecontainer {
   cursor: pointer;
 }
@@ -43,7 +43,54 @@ body {
 /** ENDOF TOOLBAR **/
 
 /** AUDIOVIEW **/
-/** ENDOF AUDIOVIEW **/
+/** END OF AUDIOVIEW **/
+
+/** MODAL **/
+.ae_modal {
+  position: relative;
+  margin: -40px auto 0 auto;
+  border: 1px solid #333;
+  background: #222;
+  display: block;
+  box-shadow: 0 0 20px #333;
+  min-width: 344px;
+  min-height: 168px;
+
+  animation: ae_shw 0.2s ease-out 0ms 1;
+
+  margin-top: 0;
+}
+
+.ae_modal.ae_bigger {
+  min-width: 400px;
+}
+
+.ae_modal .ae_txt {
+  display: block;
+  margin-top: 6px;
+  background: #111;
+  outline: 0;
+  padding: 4px 8px;
+  color: #eee;
+  border-radius: 4px;
+  border: 1px solid #333;
+  border-bottom: 1px solid #444;
+}
+
+.ae_modal_back {
+  z-index: 8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  right: 0;
+  display: block;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.62);
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
+}
+/** END OF MODAL **/
 
 .ae_mobile .ae_zoom_in_v,
 .ae_mobile .ae_zoom_out_v {
@@ -88,4 +135,22 @@ body {
     margin: 0px 4px;
     line-height: 24px;
   }
+}
+
+/* MOBILE STYLES */
+body.ae_stndln {
+  padding-bottom: 600px;
+  overflow: hidden;
+}
+
+.ae_stndln .ae_fxd {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.ae_stndln .ae_modal_back {
+  position: fixed;
 }
